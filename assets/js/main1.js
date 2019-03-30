@@ -1,33 +1,4 @@
-// document.querySelector('#myForm').addEventListener('submit', saveBookmark);
 
-// function saveBookmark(e) {
-//   // prevent default form submitting
-//   e.preventDefault();
-//   // get form values
-//   var siteSubject = document.querySelector('#subject').value;
-//   var  siteMessage  = document.querySelector('#message').value;
-//   var  siteName = document.querySelector('#name').value;
-//   var  siteGender  = document.querySelector('#gender').value;
-//   var  sitePhone  = document.querySelector('#phone').value;
-//   var  siteEmail  = document.querySelector('#email').value;
-//   console.log(siteSubject);
-//   console.log(siteMessage);
-//   console.log(siteName);
-//   console.log(siteGender);
-//   console.log(sitePhone);
-//   console.log(siteEmail);
-  
-//    if (!validateForm( siteSubject,siteMessage,siteName,siteGender,sitePhone,siteEmail)) {
-//      return false;
-//    }
-
-//    function validateForm(siteSubject,siteMessage,siteName,siteGender,sitePhone,siteEmail) {
-//     if (!siteSubject ||!siteMessage || !siteName || !siteGender || !sitePhone || !siteEmail) {
-//       alert('กรุณากรอกข้อมูลให้ครบท้วน');
-//       return false;
-//     }
-//    }
-//   }
 
 
    // 1. Book Class: Represents a Book
@@ -46,20 +17,7 @@ class Book {
 // 2. UI Class: Handle UI Tasks
 class UI {
   static displayBooks() {
-// 3. predefined books
-//     const StoredBooks = [
-//       {
-//         title: 'Book One',
-//         author: 'John Boe',
-//         isbn: '11111111'
-//       },
-//       {
-//         title: 'Book One',
-//         author: 'John Boe',
-//         isbn: '11111111'
-//       }
-//     ];
-//     const books = StoredBooks;
+
      
     const books = Store.getBooks();
 
